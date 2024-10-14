@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List_html</title>
+    <style>
+        body {background-color: rgb(148, 248, 215);}
+
+        .heading {
+            background-color: rgb(151, 117, 245);
+        }
+
+        .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .content1 {
+            margin-left: 20px;
+        }
+
+        .footer_copy {
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+
+        .footer {
+            margin-left: 0px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <p class="html_intro">List in HTML</p>
+    </div>
+
+    <div class="content1">
+        An HTML list is a record of related information used to display the data or any information on web pages in the
+        ordered or unordered form. <br>
+
+        HTML List Example: <br>
+        <ul>
+            <li>Chapter 1</li>
+            <li>Chapter 2</li>
+            <li>Chapter 3</li>
+            <li>Chapter 4</li>
+        </ul>
+        <hr>
+
+        <h3> Unordered HTML List </h3>
+        An unordered list starts with the <font color="red">&lt;ul&gt;</font> tag. Each list item starts with the <font
+            color="red">&lt;li&gt;</font> tag. <br>
+        The list items will be marked with bullets (small black circles) by default:
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <hr>
+        <h3> Ordered HTML List </h3>
+        An unordered list starts with the <font color="red">&lt;ol&gt;</font> tag. Each list item starts with the <font
+            color="red">&lt;li&gt;</font> tag. <br>
+        The list items will be marked with numbers by default:
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <hr>
+        <h3> Nested HTML List </h3>
+        <ul>
+            <li>Chapter 1</li>
+            <li>Chapter 2
+                <ol>
+                    <li>sub_head 1</li>
+                    <li>Sub_head 2
+                        <ul>
+                            <li>sub_sub_head-1
+                                <ul>
+                                    <li>sub_sub_sub_head 1</li>
+                                    <li>sub_sub_sub_head 2</li>
+                                </ul>
+                            </li>
+                            <li>sub_sub_head-2</li>
+                            <li>sub_sub_head-3</li>
+                        </ul>
+                    </li>
+                    <li>Sub_head 2
+                        <ol>
+                            <li>Sub_head 2- subA</li>
+                            <li>Sub_head 2-subB</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Chapter 3</li>
+        </ul>
+
+
+        <hr>
+        <h3>Practicing list with different Attributes</h3>
+        <!-- list starting from 5 -->
+        <ol start="5">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <!-- list in roman numbers -->
+        <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <!-- bullets in sqaure format -->
+        <ul type="square">
+            <li>Chapter 1</li>
+            <li>Chapter 2</li>
+            <li>Chapter 3</li>
+            <li>Chapter 4</li>
+        </ul>
+        <!-- bullets in cercle -->
+        <ul type="circle">
+            <li>Chapter 1</li>
+            <li>Chapter 2</li>
+            <li>Chapter 3</li>
+            <li>Chapter 4</li>
+        </ul>
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="footer">
+        <hr>
+
+        <p class="footer_copy">&copy amankumar_aj</p>
+
+        <hr>
+    </div>
+
+</body>
+
+</html>

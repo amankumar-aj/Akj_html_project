@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video | HTML</title>
+    <style>
+        .heading {
+            background-color: rgb(151, 117, 245);
+        }
+
+        .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .content1 {
+            margin-left: 20px;
+        }
+        h1{text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: blue;
+        }
+
+
+        .footer_copy {
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+
+        .footer {
+            margin-left: 0px;
+            background-color: yellow;
+        }
+        .head2{
+            color: rgb(240, 32, 32);
+        }
+        .example{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <p class="html_intro">Media In HTML</p>
+       
+
+    </div>
+    <div class="content1">
+        <h1>HTML Video</h1>
+        <p>
+            The <font color="red"><b>&lt;video&gt;</b></font> element is used to show a video on a web page. <br>
+
+        </p>
+        <p>
+            <h2 class="head2">The HTML <font><b>&lt;video&gt;</b></font> Element</h2>
+            To play an video in HTML, use the <font><b>&lt;video&gt;</b></font> element: <br> <br>
+            <video width="400" controls muted >
+                <source src="./video/mov_bbb.mp4">
+                
+               
+              </video>
+                
+        </p>
+        <hr>
+        <h2 class="head2">HTML video - How It Works</h2>
+        <p>
+            The <font> <b class="head2">controls</b></font>  attribute adds video controls, like play, pause, and volume. <br>
+
+            It is a good idea to always include <font> <b class="head2">width</b></font>  and <font> <b class="head2">height</b></font>  attributes. If height and width are not set, the page might flicker while the video loads. <br>
+            
+            The <font> <b class="head2">&lt;source&gt;</b></font>  element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format. <br>
+            The text between the <font><b class="head2">&lt;video&gt;</b></font>  and <font><b class="head2">&lt;/video&gt;</b></font>  tags will only be displayed in browsers that do not support the <font><b class="head2">&lt;video&gt;</b></font>  element.
+            
+          
+        </p>
+        <hr>
+        <p>
+            <h2 class="head2">HTML <font><b>&lt;video&gt;</b></font> Autoplay</h2>
+            To start video automatically, use the <b class="head2">autoplay</b></font> attribute: <br>
+            Add <font> <b class="head2">muted</b></font> after <font> <b class="head2">autoplay</b></font> to let your audio file start playing automatically (but muted): <br>
+            <b class="example">Example</b> <br>
+            
+            <video width="400" controls muted loop>
+                <source src="./video/mov_bbb.mp4" >
+           
+               
+              </video>
+              <img src="./images/video_tag.png" alt="code">
+
+        </p>
+        <hr>
+        <p>
+            <h2 class="example">Enjoyeeeee  ek do Video</h2>
+            <video width="400" controls muted loop>
+                <source src="./video/videoplayback.mp4" >
+           
+               
+              </video>
+            
+            
+        </p>
+        <hr>
+
+    </div>
+    
+  
+    <div class="footer">
+        <hr>
+
+        <p class="footer_copy">&copy amankumar_aj</p>
+
+        <hr>
+    </div>
+</body>
+</html>

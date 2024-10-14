@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text_elements_html</title>
+    <style>          
+        body{background-color: rgb(230, 236, 247);
+         }
+
+         .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+        }
+         .heading {
+        background-color: rgb(226, 194, 35);
+         }
+         .content1 {
+            margin-left: 20px;
+        }
+
+
+        .footer{margin-left: 0px;
+        background-color: rgb(30, 210, 81);
+        
+        }
+        .codespan{
+            color: rgb(255, 0, 208);
+            font-size: medium;
+            margin-left: 5px;
+            
+        }
+        .sub_sup{
+            color: blue;
+        }
+        .math_ex{
+            margin-left: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .text_format{
+            color: red;
+        }
+        .footer_copy{
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <p class="html_intro">Text related attributes</p>
+    </div>
+
+    <div class="content1">
+        <h3>Paragraph Element:</h3>
+        The most basic way of adding text to a web page is the paragraph element. If you've been following along with this tutorial, you've seen this element before, but it's worth repeating, because the paragraph element is one of the most common HTML elements used on most of the websites you visit every day. <br>
+        <code class="codespan">&lt;<b class="tag">h1</b>&gt; <font>This is heading </font> &lt;<b>/h1</b>&gt; </code> <br>
+        <hr>
+        <h3>The heading elements:</h3>
+        Like the paragraph element, heading elements are also used to display text on the screen. They're generally used to create section headings. <br>
+        <code class="codespan">&lt;<b class="tag">h1</b>&gt;<font>This is heading 1</font> &lt;<b>/h1</b>&gt; </code> <br>
+        <code class="codespan">&lt;<b class="tag">h1</b>&gt;<font>This is heading 2</font> &lt;<b>/h1</b>&gt; </code> <br>
+        <code class="codespan">&lt;<b class="tag">h1</b>&gt;<font>This is heading 3</font> &lt;<b>/h1</b>&gt; </code> <br>
+        <code class="codespan">&lt;<b class="tag">h1</b>&gt;<font>This is heading 4</font> &lt;<b>/h1</b>&gt; </code> <br>
+        <code class="codespan">&lt;<b class="tag">h1</b>&gt;<font>This is heading 5</font> &lt;<b>/h1</b>&gt; </code> <br>
+        <code class="codespan">&lt;<b class="tag">h1</b>&gt;<font>This is heading 6</font> &lt;<b>/h1</b>&gt; </code> <br>
+        For example, you might use a heading element to display the title of an essay you're writing, or the name of a chapter in a book. The actual text of the essay or chapter, on the other hand, would use paragraph elements. <br> <br>
+        Heading elements come in six default levels, &lt;h1&gt; through &lt;h6&gt;, which you can think of as an order of importance. If you put an &lt;h1&gt; on your web page, for example, it's safe to assume that it's the most important section heading and probably at the top of your page, while an&lt;h2&gt; is slightly less and important, and so on. 
+
+            They also come with some default browser styling, which reinforces that order of importance: the &lt;h2&gt; element is the biggest, the &lt;h2&gt; is smaller, and on like that.
+            <hr>
+        
+        <h3>Text formatting elements:</h3>
+        <p>
+            Text formatting elements are used to change the way text looks in certain predefined ways. For instance, here are a few common text formatting elements: <br>
+
+            <b class="text_format">Bold:</b> The &lt;b&gt; element makes its contents bold. <br>
+            <i class="text_format">Italics:</i> The &lt;i&gt; element italicizes its contents. <br>
+            <u class="text_format">Underline: </u>The &lt;u&gt; element underlines its contents. <br>
+            <em  class="text_format">Emphasized:</em> The &lt;em&gt; element is also used for itallic <br>
+            These elements are usually found nested inside of other text elements, such as the paragraph or heading elements, because they are usually only meant to apply to part of the text. For example:
+            <img src="./images/text_formatings.png" alt="textfor_exaple">
+        </p>
+        <hr>
+        <p>
+            <h3>Subscript and superscript</h3>
+            HTML <b class="sub_sup"> &lt;sup&gt;</b> and <b class="sub_sup">&lt;sub&gt;</b>Tags: <br>  The  <b class="sub_sup">&lt;sup&gt;</b>  tag is used to superscript a text whereas the  <b class="sub_sup">&lt;sub&gt;</b>  tag is used to subscript a text. <br><br>
+            Mathematical Equations:
+                <font class="math_ex" >X=3X<sup>3</sup>+ X<sup>2</sup>+7X+2</font> <br> 
+            Chemistry:
+                <font class="math_ex">H<sub>2</sub>SO<sub>4</sub></font> <br>
+            
+                Example: In above example, we see the use of  <b class="sub_sup">&lt;sup&gt;</b>  and  <b class="sub_sup">&lt;sub&gt;</b>  Tags
+        
+        </p>
+
+        <h3>Text Highlighting</h3>
+        HTML <b class="sub_sup"> &lt;mark&gt;</b>Tags: </b> <br> The  <b class="sub_sup">&lt;mark&gt;</b> tag is used to highlighting a text. It has an opening and closing tag. <br>
+        <code class="codespan">&lt;<b class="tag">mark</b>&gt; This text is highlighted<code class="codespan">&lt;<b class="tag">/mark</b>&gt;</code>
+        <mark>This is highlighted text</mark>
+        
+
+    </div>
+
+    <div class="footer" >
+        <hr>
+            
+            <p class="footer_copy">&copy amankumar_aj</p>
+            
+        <hr>
+    </div>
+</body>
+</html>

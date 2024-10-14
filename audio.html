@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio | HTML</title>
+    <style>
+        .heading {
+            background-color: rgb(151, 117, 245);
+        }
+
+        .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .content1 {
+            margin-left: 20px;
+        }
+        h1{text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: blue;
+        }
+
+
+        .footer_copy {
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+
+        .footer {
+            margin-left: 0px;
+            background-color: yellow;
+        }
+        .head2{
+            color: rgb(240, 32, 32);
+        }
+        .example{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <p class="html_intro">Media In HTML</p>
+       
+
+    </div>
+    <div class="content1">
+        <h1>HTML Audio</h1>
+        <p>
+            The <font color="red"><b>&lt;audio&gt;</b></font> element is used to play an audio file on a web page. <br>
+
+        </p>
+        <p>
+            <h2 class="head2">The HTML <font><b>&lt;audio&gt;</b></font> Element</h2>
+            To play an audio file in HTML, use the <font><b>&lt;audio&gt;</b></font> element: <br> <br>
+            <audio controls muted loop>
+                <source src="./audio/flute.mp3">
+                
+              </audio>  
+                
+        </p>
+        <hr>
+        <h2 class="head2">HTML Audio - How It Works</h2>
+        <p>
+            The <font> <b class="head2">controls</b></font> attribute adds audio controls, like play, pause, and volume. <br>
+
+            The <font><b>&lt;source&gt;</b></font>  element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format. <br>
+
+            The text between the <font><b>&lt;audio&gt;</b></font>  and <font><b>&lt;/audio&gt;</b></font>  tags will only be displayed in browsers that do not support the <font><b>&lt;audio&gt;</b></font>  element.
+        </p>
+        <hr>
+        <p>
+            <h2 class="head2">HTML <font><b>&lt;audio&gt;</b></font> Autoplay</h2>
+            To start an audio file automatically, use the <b class="head2">autoplay</b></font> attribute: <br>
+            Add <font> <b class="head2">muted</b></font> after <font> <b class="head2">autoplay</b></font> to let your audio file start playing automatically (but muted): <br>
+            <b class="example">Example</b> <br>
+            <img src="./images/audio_tag.png" alt="code">
+            <audio controls  muted loop>
+                <source src="./audio/flute.mp3">
+                
+              </audio>  
+
+        </p>
+        <hr>
+        <p>
+            <h2 class="example">Enjoyeeeee Poetry</h2>
+            <audio controls  muted loop>
+                <source src="./audio/Madhushala.m4a">
+                
+            </audio> 
+            <audio controls  muted>
+                <source src="./audio/mai bhava.m4a">
+            </audio>
+            <audio controls  muted>
+                <source src="./audio/siyasat mai tera koya.m4a">
+            </audio>
+
+        </p>
+        <hr>
+
+        
+        
+
+
+    </div>
+    
+
+  
+    <div class="footer">
+        <hr>
+
+        <p class="footer_copy">&copy amankumar_aj</p>
+
+        <hr>
+    </div>
+</body>
+</html>

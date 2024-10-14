@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyperlinks</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        .heading {
+            background-color: rgb(151, 117, 245);
+        }
+
+        .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .content1 {
+            margin-left: 20px;
+        }
+        .head2{
+            color: deeppink;
+        }
+        .example{
+            color: blue;
+        }
+        .codespan{
+            color: rgb(246, 22, 45);
+            font-size: medium;
+            margin-left: 5px;
+            
+        }
+
+
+.footer_copy {
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+
+        .footer {
+            margin-left: 0px;
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <p class="html_intro">Hyperlinks in HTML</p>
+       
+
+    </div>
+    <div class="content1">
+
+        <h2 class="head2">HTML Links: </h2>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        <hr>
+        <p><h3>HTML Links - Hyperlinks</h3>
+            HTML links are hyperlinks. <br>
+            You can click on a link and jump to another document. <br>
+            When you move the mouse over a link, the mouse arrow will turn into a little hand. <br> <br>
+
+        The <font color="red"><b>&lt;a&gt;</b></font> tag defines a hyperlink. It has the following syntax:
+ 
+        <font color="red"><b>&lt;a href=" path/ "&gt;</b><b class="example">Content</b></font><font color="red"><b>&lt;/a&gt;</b></font>
+            <br>
+        <a href="./intoduction.html">html_Introdcution</a>
+        <hr>
+
+        <h3>HTML Links - Use an Image as a Link</h3>
+        <p> To use an image as a link, just put the <font color="red"><b>&lt;img&gt;</b></font> tag inside the <font color="red"><b>&lt;a&gt;</b></font> tag: <br>
+            <b class="example">Example: </b> <br>
+            <a href="https://www.oracle.com/in/java/"><img src="./images/java (1).ico" alt="java_icon" height="60px" width="60px"></a>
+            <b> <----------------image link</b>
+        </p>
+        <hr>
+        <p>
+        <h3>Link to an Email Address</h3>
+        Use The <font color="red"><b>mailto:</b></font> inside the The <font color="red"><b>href</b></font> attribute to create a link that opens the user's email program (to let them send a new email): <br>
+        <a href="mailto:someone@example.com">Send email</a>
+
+        </p>
+        <hr>
+        <p>
+            <h3>Anchor tag Attributes</h3>
+            The most important attribute of the <font color="red"><b>&lt;a&gt;</b></font>  element is the <font color="red"><b>href</b></font> attribute, which indicates the link's destination. <br>
+
+                The link text is the part that will be visible to the reader. <br>
+                
+                Clicking on the link text, will send the reader to the specified URL address. <br>
+
+                <b class="example">Example: </b>
+                <ul>
+                    <li><a href="www.google.com">Google</a></li>
+                    <li><a href="https://abes.ac.in">ABES</a></li>
+                    <li><a href="./intoduction.html">Introduction</a></li>
+                    <li><a href="https://www.apple.com/">Apple</a></li>
+                </ul>
+
+        </p>
+        <hr>
+        <p>
+            <h3>HTML Links - The target Attribute</h3>
+            <p>By default, the linked page will be displayed in the current browser window. <br>
+                To change this, you must specify another target for the link.</p>
+                <p>
+                    The <font color="red"><b>target</b></font> attribute specifies where to open the linked document. <br>
+                    The <font color="red"><b>target</b></font> attribute can have one of the following values:
+                </p>
+                <ul>
+                    <li><code class="codespan">_self</code> - Default. Opens the document in 
+                    the same window/tab as it was clicked</li>
+                    <li><code class="codespan">_blank</code> - Opens the document in a new window or tab</li>
+                    <li><code class="codespan">_parent</code> - Opens the document in the parent frame</li>
+                    <li><code class="codespan">_top</code> - Opens the document in the full body of the window</li>
+                  </ul>
+                  <b class="example">Syntax</b><br>
+                  <img src="./images/anchor_tag_target.png" alt="anchor_tag_target_img"> <br>
+                 <b class="example">Example: </b>
+                 <ul>
+                    <li><a href="./intoduction.html" target="_blank">Intro</a></li>
+                    <li><a href="./tables.html" target="_blank">Tables</a></li>
+                </ul>
+
+        </p>
+        <hr>
+
+        
+
+
+        
+        </p>
+    </div>
+
+
+  
+    <div class="footer">
+        <hr>
+
+        <p class="footer_copy">&copy amankumar_aj</p>
+
+        <hr>
+    </div>
+</body>
+</html>

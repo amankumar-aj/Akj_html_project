@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_attributes</title>
+    <style>
+        body {
+            background-color: rgb(230, 236, 247);
+        }
+
+        .heading {
+            background-color: rgb(226, 194, 35);
+        }
+
+        .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+        }
+
+        .content1 {
+            margin-left: 20px;
+        }
+
+        .atr_txt {
+            color: rgb(243, 15, 15);
+            font-weight: 600;
+        }
+
+        .codespan {
+            color: rgb(255, 0, 0);
+            font-size: larger;
+
+        }
+        .footer{margin-left: 20px;
+        background-color: rgb(30, 210, 81);
+        
+        }
+        .footer_copy{
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <p class="html_intro">HTML Attributes</p>
+    </div>
+
+    <div class="content1">
+        <h2> HTML Attributes</h2>
+        <p class="atr_txt">
+            All HTML elements can have attributes <br>
+            Attributes provide additional information about elements <br>
+            Attributes are always specified in the start tag <br>
+            Attributes usually come in name/value pairs like: name="value" <br>
+        </p>
+    </div>
+    <hr>
+    <div class="content1">
+        <h2>The href Attribute</h2>
+        <p>The <code
+                class="codespan">&lt;<b class="tag">a href="<font color="black">path to source</font>"</b>&gt; </code>tag
+            defines a hyperlink. The <font color="red">'href'</font> attribute specifies the URL of the page the link
+            goes to: <br>
+            <a href="./others/home.html"> Abes_home_page</a> <--- hyperlink </p>
+
+    </div>
+    <hr>
+    <div class="content1">
+        <h2>The src Attribute
+        </h2>
+        <p>The <code
+                class="codespan">&lt;<b class="tag">img src="<font color="black">path to image source</font>"</b>&gt; </code>
+            tag is used to embed an image in an HTML page. The <font color="red">'src'</font> attribute specifies the
+            path to the image to be displayed: <br>
+            <a href="./others/nirf.jpg">image</a> <--- image </p>
+
+
+                <h3>The width and height Attributes</h3>
+                The <code
+                    class="codespan">&lt;<b class="tag">img src=" <font color="black">path to image source</font> height="100px " width="100px" alt='<font color="black">alternate text for image</font>'</b>&gt; </code>
+                The &lt; <font cloor="red">img</font> &gt;tag should also contain the <font color="red">'width'</font>
+                and <font color="red">'height'</font> attributes, which specify the width and height of the image (in
+                pixels): <br>
+                <img src="./others/nirf.jpg" alt="nirf" height="150px" width="200px">
+                <p>
+                <h3>The alt Attribute</h3>
+                The required <font color="red">'alt'</font> attribute for the <font color="red">&lt;img&gt;</font> tag
+                specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be
+                due to a slow connection, or an error in the <font color="red">'src'</font>attribute, or if the user
+                uses a screen reader.</p>
+        </p>
+
+    </div>
+    <hr>
+
+    <div class="content1">
+        <h2>The style Attribute</h2>
+        <p>
+            The  <font color="red">style</font> attribute is used to add styles to an element, such as color, font, size, and more. <br>
+            <img src="./images/p_style.png" alt="p_style"> <br>
+            <font color="red">This is a red paragraph.</font>
+            <p title="I'm a tooltip">This is a paragraph with a title hower on it</p>
+        </p>
+
+    </div>
+    
+    <div class="footer" >
+        <hr>
+            
+            <p class="footer_copy">&copy amankumar_aj</p>
+            
+        <hr>
+    </div>
+
+    
+
+</body>
+
+</html>

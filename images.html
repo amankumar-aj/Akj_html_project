@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images | HTML</title>
+    <style>
+       
+        .heading {
+            background-color: rgb(151, 117, 245);
+        }
+
+        .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .content1 {
+            margin-left: 20px;
+        }
+        .tag_clr{
+            color: red;
+        }
+        .head2{
+            color: rgb(7, 136, 119);
+        }
+        .example{
+            color: blue;
+        }
+
+
+
+.footer_copy {
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+
+        .footer {
+            margin-left: 0px;
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <p class="html_intro">Images in HTML</p>
+    </div>
+
+    <div class="content1">
+        <p>The HTML <font><b class="tag_clr">&lt;img&gt; </b></font>tag is used to embed an image in web pages by linking them. It creates a placeholder for the image, defined by attributes like src, width, height, and alt, and does not require a closing tag. <br>
+
+            There are two ways to insert the images into a webpage: <br>
+            <ul>
+                <li>By providing a full path or address (URL) to access an internet file.</li>
+                <li> By providing the file path relative to the location of the current web page file.</li>
+            </ul>   
+            
+        </p>
+        <hr>
+
+        <h2 class="head2">HTML Images Syntax</h2> 
+        <p>The HTML <font><b class="tag_clr">&lt;img&gt; </b></font> tag is used to embed an image in a web page. <br>
+
+            Images are not technically inserted into a web page; images are linked to web pages. The <font><b class="tag_clr">&lt;img&gt; </b></font>tag creates a holding space for the referenced image. <br>
+            
+            The <font><b class="tag_clr">&lt;img&gt; </b></font> tag is empty, it contains attributes only, and does not have a closing tag. <br>
+            
+            The <font><b class="tag_clr">&lt;img&gt; </b></font> tag has two required attributes: <br> <br>
+            
+            <b class="tag_clr">src</b> - Specifies the path to the image <br>
+            <b class="tag_clr">alt</b> - Specifies an alternate text for the image</p>
+            <b class="example">Syntax: </b> <br>
+            <img src="./images/image_syntax.png" alt="img-syntax"> 
+            <hr>
+
+        <h3>The src Attribute</h3>
+        The required <b class="tag_clr">src</b> attribute specifies the path (URL) to the image. <br>
+
+        Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. <br> Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon.
+        <br> <br>
+        <b class="example">Example: </b> <br> 
+        <img src="./images/img_src_attribute.png" alt="img_src_syntax"> <br>
+
+        <img  class="supernova_img" src="./images/supernova.png" alt="supernova_img" height="300px" width="450px "> <hr>
+
+        <h3>The alt Attribute</h3>
+        <p>
+            The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader). <br>
+
+            The value of the alt attribute should describe the image:  <br>
+       
+        <b class="example">Example: </b> <br>
+        
+        <img src="./images/bird_alt_attribu.te.png" alt="bird" height="330px" width="550">  <------ broken image but shows alternate text 
+
+    </p>
+    <hr>
+    
+    <h3>Image Size - Width and Height</h3>
+    <p>The width and height attributes always define the width and height of the image in pixels. <br>
+    
+    </p>
+    <img src="./images/image_ht_wd.png" alt="syntax" > <br>
+    <img src="./images/bird_alt_attribute.png" alt="bird"  height="330px" width="550"> 
+    <img src="./images/" alt="">
+    <hr>
+
+    <h3>Image as a Link</h3>
+    To use an image as a link, put the <font><b class="tag_clr">&lt;img&gt; </b></font> tag inside the <font><b class="tag_clr">&lt;a&gt; </b></font> tag: <br>
+    <b class="example">Example: </b> <br>
+            <a href="https://www.oracle.com/in/java/"><img src="./images/java (1).ico" alt="java_icon" height="60px" width="60px"></a>
+            <b> <----------------image link</b>
+
+    </div>
+    <!-- <div>
+        <h3>Image galary</h3>
+        <img src="" alt="">
+    </div> -->
+
+    
+    <div class="footer">
+        <hr>
+
+        <p class="footer_copy">&copy amankumar_aj</p>
+
+        <hr>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_html</title>
+    <style>
+        body{ background-color: beige;}
+        .heading {
+            background-color: rgb(151, 117, 245);
+        }
+
+        .html_intro {
+            text-align: center;
+            font-size: xx-large;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .content1 {
+            margin-left: 20px;
+        }
+        table, th, td {
+         border:1px solid black;
+        }
+
+
+        .footer_copy {
+            text-align: center;
+            font-size: larger;
+            color: blue;
+        }
+
+        .footer {
+            margin-left: 0px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body> 
+    <!-- i need to add form attributes elemnts and input attributes -->
+    <div class="heading">
+        <p class="html_intro">Forms in HTML</p>
+       
+
+    </div>
+
+    <div class="content">
+        <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+        <hr>
+        Example: <br>
+        <form action="./thankyoupage.html" target="_blank">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+          <hr>
+          <h2>A Registration form</h2>
+          <a href="./registration.html" target="_blank">My_registration_Form</a>
+          <hr>
+        <h3>The <font color="red">&lt;input&gt;</font></font> Element</h3>
+        The HTML <font color="red">&lt;input&gt;</font></font> element is the most used form element. <br>
+        An <font color="red">&lt;input&gt;</font></font> element can be displayed in many ways, depending on the type attribute.
+
+Here are some examples:
+
+          <table class="">
+            <tbody><tr>
+             <th>Type</th>
+             <th>Description</th>
+            </tr>
+            <tr>
+             <td>&lt;input type="text"&gt;</td>
+             <td>Displays a single-line text input field</td>
+            </tr>
+            <tr>
+             <td>&lt;input type="radio"&gt;</td>
+             <td>Displays a radio button (for selecting one of many choices)</td>
+            </tr>
+            <tr>
+             <td>&lt;input type="checkbox"&gt;</td>
+             <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+            </tr>
+            <tr>
+             <td>&lt;input type="submit"&gt;</td>
+             <td>Displays a submit button (for submitting the form)</td>
+            </tr>
+            <tr>
+             <td>&lt;input type="button"&gt;</td>
+             <td>Displays a clickable button</td>
+            </tr>
+            </tbody></table>
+            <hr>
+            <h3>The <font color="red">&lt;label&gt;</font></font>Element</h3>
+            Notice the use of the <font color="red">&lt;label&gt;</font></font>element in the example above. <br>
+
+                The <font color="red">&lt;label&gt;</font></font> tag defines a label for many form elements. <br>
+                
+                The <font color="red">&lt;label&gt;</font></font> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element. <br>
+                
+                The <font color="red">&lt;label&gt;</font></font>element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <font color="red">&lt;label&gt;</font></font> element, it toggles the radio button/checkbox. <br>
+                
+                The for attribute of the <font color="red">&lt;label&gt;</font></font> tag should be equal to the id attribute of the <font color="red">&lt;input&gt;</font></font>element to bind them together. <br>
+
+         <hr>
+         <h3>Radio Buttons</h3>
+         <font color="red">&lt;input type="radio"&gt;</font></font>defines a radio button. <br>
+
+         Radio buttons let a user select ONE of a limited number of choices.
+         <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label> <br>
+            <input type="radio" id="javascript" name="fav_language" value="Java">
+            <label for="javascript">Java</label>
+          </form>
+
+          <hr>
+          <h3>checkboxes</h3>
+          <font color="red">&lt;input type="checkbox"&gt;</font></font>defines a checkbox. <br>
+
+          Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+          <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> CSE</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> IT</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> ECE</label>
+          </form>
+          <hr>
+          <h3>buttons</h3>
+        <ol type="I">
+            <li><b>The Submit Butto</b>n</li>
+        The <font color="red">&lt;input type="submit"&gt;</font></font> defines a button for submitting the form data to a form-handler. <br>
+        The form-handler is typically a file on the server with a script for processing input data. <br>
+        The form-handler is specified in the form's action attribute. <br>
+
+        <form action="./thankyoupage.html" target="_blank">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br> <br>
+            <input type="submit" value="Submit">
+          </form> <br>
+
+          <li><b>The reset button</b></li>
+          The <font color="red">&lt;input type="reset"&gt;</font></font> defines a button for reset the form data. <br>
+          <form action="./thankyoupage.html" target="_blank">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" ><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br> <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+          </form> <br>
+       
+
+
+
+        </ol>
+                
+
+        
+    </div>
+
+    
+    <div class="footer">
+        <hr>
+
+        <p class="footer_copy">&copy amankumar_aj</p>
+
+        <hr>
+    </div>
+</body>
+</html>
